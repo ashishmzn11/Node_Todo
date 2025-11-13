@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css"></link>
+  <title>update</title>
+</head>
+<body>
+  <%- include("navbar")%>
+  <h1>Update Task</h1>
+<form action="/update" method="post">
+<label for="task">Task Name:</label><br>
+<input type="text" id="task" name="task" placeholder="Enter task name"><br><br>
+
+
+<label for="date">Due Date:</label><br>
+<input type="date" id="date" name="date"><br><br>
+
+
+<label for="note">Notes:</label><br>
+<input type="text" id="note" name="note" placeholder="Enter notes"><br><br>
+
+
+<button type="submit">Add Task</button>
+</form>
+</body>
+</html>
